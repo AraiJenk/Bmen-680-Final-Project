@@ -1,0 +1,9 @@
+# Developing a Machine Learning Approach for Benign and Malignant Skin Lesion Classification using Dermatoscopic Imaging
+
+Skin cancer screening depends on recognizing suspicious lesions early, but dermatoscopic images can be difficult to interpret consistently. This project will investigate whether a machine learning system can classify images of skin lesions as benign or malignant and help prioritize cases for expert review. The engineering problem is to build a reproducible image-processing and classification pipeline that performs reliably across lesion types while limiting missed malignant cases.
+
+We propose using the open-source HAM10000 dataset, which contains 10,015 dermatoscopic images spanning seven diagnostic categories. We will document how its diagnostic labels are grouped into benign and malignant classes before training; uncertain or premalignant categories will be handled explicitly rather than assigned automatically. Python libraries including pandas and NumPy will manage labels and metadata, and Pillow/OpenCV will resize and normalize images and support training-only augmentation. We will compare a scikit-learn baseline using extracted image features with a transfer-learning convolutional neural network in PyTorch. Images of the same lesion will remain in one data split to reduce leakage. We will assess sensitivity for malignant lesions, specificity, precision, F1 score, and ROC-AUC, alongside confusion matrices and class imbalance.
+
+The project applies biomedical image processing and machine learning to a practical engineering challenge: designing a transparent, testable decision-support workflow for medical images. Its output will be an evaluated research prototype, not a diagnostic tool.
+
+**Dataset proposed:** [HAM10000 in the ISIC Archive](https://api.isic-archive.com/collections/212/). Confirm the group's chosen dataset and binary label policy before submission.
