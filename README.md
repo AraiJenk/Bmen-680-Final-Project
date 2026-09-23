@@ -6,7 +6,7 @@ The half-page project draft is in [docs/project-summary.md](docs/project-summary
 
 ## Proposed data and approach
 
-- Dataset: [HAM10000 / ISIC Archive](https://api.isic-archive.com/collections/212/) (proposal; confirm with group).
+- Dataset: [HAM10000 / ISIC Archive](https://api.isic-archive.com/collections/212/)
 - Task: binary lesion classification. Define class mappings and exclusions in `docs/label-policy.md` before analysis.
 - Preprocessing: pandas, NumPy, Pillow/OpenCV.
 - Models: scikit-learn feature baseline and PyTorch transfer learning.
